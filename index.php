@@ -1,6 +1,5 @@
 
 <?php
-echo "Hello World <br>";
 
 function isEven($number){
         if($number < 0){
