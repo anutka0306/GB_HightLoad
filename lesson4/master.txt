@@ -1,0 +1,12 @@
+datadir=/var/lib/mysql
+socket=/var/lib/mysql/mysql.sock
+
+log-error=/var/log/mysqld.log
+pid-file=/var/run/mysqld/mysqld.pid
+
+# укажем ID сервера — произвольное, но уникальное число
+server-id = 1
+# укажем путь к бинарному логу — там будут храниться операции
+log_bin = mysql-bin.log
+# название вашей базы данных, которая будет реплицироваться
+binlog_do_db = testdb
