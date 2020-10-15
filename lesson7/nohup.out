@@ -1,0 +1,33 @@
+New connection! (37)
+Connection 37 sending message "hello
+" to 0 other connections
+PHP Fatal error:  Uncaught RuntimeException: Failed to listen on "tcp://0.0.0.0:8181": Address already in use in /var/www/mysite.local/vendor/react/socket/src/TcpServer.php:165
+Stack trace:
+#0 /var/www/mysite.local/vendor/react/socket/src/Server.php(36): React\Socket\TcpServer->__construct('tcp://0.0.0.0:8...', Object(React\EventLoop\StreamSelectLoop), Array)
+#1 /var/www/mysite.local/vendor/cboden/ratchet/src/Ratchet/Server/IoServer.php(59): React\Socket\Server->__construct('0.0.0.0:8181', Object(React\EventLoop\StreamSelectLoop))
+#2 /var/www/mysite.local/server.php(11): Ratchet\Server\IoServer::factory(Object(MyApp\Chat), 8181)
+#3 {main}
+  thrown in /var/www/mysite.local/vendor/react/socket/src/TcpServer.php on line 165
+New connection! (37)
+Connection 37 sending message "hello
+" to 0 other connections
+Connection 37 sending message "hello all
+" to 0 other connections
+New connection! (48)
+Connection 48 sending message "hello 37
+" to 1 other connection
+Connection 37 sending message "hello 48
+" to 1 other connection
+Connection 37 sending message "hello ALL
+" to 1 other connection
+Connection 37 sending message "����" to 1 other connection
+Connection 48 sending message "��" to 1 other connection
+Connection 37 sending message "
+" to 1 other connection
+Connection 37 has disconnected
+Connection 48 sending message "
+" to 0 other connections
+Connection 48 sending message "����" to 0 other connections
+Connection 48 sending message "
+" to 0 other connections
+Connection 48 has disconnected
